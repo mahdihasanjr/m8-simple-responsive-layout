@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+
+    padding: 20px;
+    max-width: 960px;
+    margin:0 auto;
+}
+h3{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.column{
+    border:1px solid black;
+    border-radius: 15px;
+    display:flex;
+    align-items: flex-start;
+    gap:20px;
+}
+
+.column div{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+    
+}
+.column img{
+    width:100%;
+}
+button{
+    background-color:dodgerblue;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius: 5px;
+    width:15%;
+}
+
+/* Design for smaller devices */
+
+@media screen and (max-width:576px){
+    h3{
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    .column{
+        flex-direction: column;
+        text-align: justify;
+        gap:0px;
+    }
+    .column div{
+         padding: 10px;
+    }
+    .column h2{
+        font-size: 1.5em;
+        font-weight: 600;
+        
+    }
+    .column p{
+        font-size: 0.8em;
+        
+    }
+    .column img{
+        width:100%;
+    }
+   button{
+    width: 100%;
+    /* padding:10 0; */
+   }
+}

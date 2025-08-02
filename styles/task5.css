@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    border: 2px solid rgb(6, 239, 219);
+    border-radius: 10px;
+    max-width: 1000px;
+    margin:0 auto;
+    padding:10px;
+}
+
+figure {
+    border:1px solid rgb(253, 0, 34);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width:100%;
+    border-radius: 10px;
+}
+
+/* smaller devices */
+
+@media screen and (max-width:576.36px){
+    figure img{
+        width:100%;
+    }
+}
+
+@media screen and (min-width:576.37px) and (max-width:764){
+    figure{
+        display: flex;
+        flex-direction: column;
+    }
+    figure img{
+        width:100%;
+    }
+}
